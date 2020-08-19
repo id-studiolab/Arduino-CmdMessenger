@@ -7,6 +7,22 @@ This fork is meant as a drop-in replacement for the original CmdMessenger librar
 
 **In case you already installed the original CmdMessenger library, please make sure to uninstall it before using CmdMessengerID to avoid potential conflicts** (see Download & Installation below).
 
+## Download & Installation
+
+This library can be downloaded directly from its GitHub repository: 
+ 1. Go to [https://github.com/id-studiolab/Arduino-CmdMessengerID](https://github.com/id-studiolab/Arduino-CmdMessengerID)
+ 2. [**Click here to download**](https://github.com/id-studiolab/Arduino-CmdMessengerID/archive/master.zip) or navigate to the green _**Code**_ button at the top of the repository and then click _**Download ZIP**_
+ 3. Uncompressed the folder _**Arduino-CmdMessengerID-master**_  and rename it to _**CmdMessengerID**_.
+ 4. Place the _**CmdMessengerID**_ folder in your _**libraries**_ folder, which is located in your Arduino IDE's _**sketchbook**_ folder. You can find or change its location at **File > Preferences > Sketchbook location**. If you never installed a library before, you may need to create the _**libraries**_ folder.
+ 5. Make sure your _**libraries**_ folder does not contain a previous version of _**CmdMessenger**_. If it does, back up or delete that folder before installing _**CmdMessengerID**_ to avoid conflicts.
+ 5. Restart the Arduino IDE.
+
+## Requirements
+
+* [Arduino IDE Version 1.0.5 or later](http://www.arduino.cc/en/Main/Software)* 
+
+\* Earlier versions of the Arduino IDE will probably work but have not been tested.
+
 ## Introduction
 
 CmdMessengerID is a messaging library for the Arduino Platform (and .NET/Mono platform). It supports multiple transport layers: serial port over USB, Bluetooth, TCP/IP (under development) 
@@ -30,22 +46,6 @@ With version 3.x also comes a full implementation of the toolkit in C#, which ru
 This allows for full 2-way communication between the arduino controller and the PC.
 
 If you are looking for a Python client to communicate with, please have a look at [PyCmdMessenger](https://github.com/harmsm/PyCmdMessenger)
-
-## Requirements
-
-* [Arduino IDE Version 1.0.5 or later](http://www.arduino.cc/en/Main/Software)* 
-
-\* Earlier versions of the Arduino IDE will probably work but have not been tested.
-
-## Download & Installation
-
-This library can be downloaded directly from its GitHub repository: 
- 1. Go to [https://github.com/id-studiolab/Arduino-CmdMessengerID](https://github.com/id-studiolab/Arduino-CmdMessengerID)
- 2. [**Click here to download**](https://github.com/id-studiolab/Arduino-CmdMessengerID/archive/master.zip) or navigate to the green _**Code**_ button at the top of the repository and then click _**Download ZIP**_
- 3. Uncompressed the folder _**Arduino-CmdMessengerID-master**_  and rename it to _**CmdMessengerID**_.
- 4. Place the _**CmdMessengerID**_ folder in your _**libraries**_ folder, which is located in your Arduino IDE's _**sketchbook**_ folder. You can find or change its location at **File > Preferences > Sketchbook location**. If you never installed a library before, you may need to create the _**libraries**_ folder.
- 5. Make sure your _**libraries**_ folder does not contain a previous version of _**CmdMessenger**_. If it does, back up or delete that folder before installing _**CmdMessengerID**_ in order to avoid any conflicts.
- 5. Restart the Arduino IDE.
 
 ## Getting Started
 
