@@ -1,18 +1,15 @@
-# CmdMessenger
+# CmdMessengerID
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-A messaging library for the Arduino and .NET/Mono platform 
+A fork of the [CmdMessenger](https://github.com/thijse/Arduino-CmdMessenger) messaging library for the Arduino and .NET/Mono platform. It fixes minor compatibility issues with certain non-AVR platforms.
 
-C# Build status: [![C# Build status](https://ci.appveyor.com/api/projects/status/07nelgrs4wu8nh5r?svg=true)](https://ci.appveyor.com/project/ThijsElenbaas/arduino-cmdmessenger)
+This fork is meant as a drop-in replacement for the original CmdMessenger library, meaning existing sketches do not need to be refactored. 
 
-VB# Build status: [![VB Build status](https://ci.appveyor.com/api/projects/status/3qhrsm2nw7cqc4st?svg=true)](https://ci.appveyor.com/project/ThijsElenbaas/arduino-cmdmessenger-yaykh)
-
-Arduino Build status: [![Build Status](https://api.travis-ci.org/thijse/Arduino-CmdMessenger.svg?branch=master&dfff)](https://travis-ci.org/thijse/Arduino-CmdMessenger) 
-
+**In case you already installed the original CmdMessenger library, please make sure to uninstall it before using CmdMessengerID to avoid potential conflicts** (see Download & Installation below).
 
 ## Introduction
 
-CmdMessenger is a messaging library for the Arduino Platform (and .NET/Mono platform). It supports multiple transport layers: serial port over USB, Bluetooth, TCP/IP (under development) 
+CmdMessengerID is a messaging library for the Arduino Platform (and .NET/Mono platform). It supports multiple transport layers: serial port over USB, Bluetooth, TCP/IP (under development) 
 
 The message format is:
 ```
@@ -40,26 +37,15 @@ If you are looking for a Python client to communicate with, please have a look a
 
 \* Earlier versions of the Arduino IDE will probably work but have not been tested.
 
-## Downloading
+## Download & Installation
 
-This package can be downloaded in different manners 
-
-
-- The Arduino Library Manager: [see here how to use it](http://www.arduino.cc/en/guide/libraries#toc3).
-- The PlatformIO Library Manager: [see here how to use it](http://docs.platformio.org/en/latest/ide/arduino.html).
-- By directly loading fetching the Archive from GitHub: 
- 1. Go to [https://github.com/thijse/Arduino-CmdMessenger](https://github.com/thijse/Arduino-CmdMessenger)
- 2. Click the DOWNLOAD ZIP button in the panel on the
- 3. Rename the uncompressed folder **Arduino-CmdMessenger-master** to **CmdMessenger**.
- 4. You may need to create the libraries subfolder if its your first library.  
- 5. Place the **CmdMessenger** library folder in your **arduinosketchfolder/libraries/** folder. 
- 5. Restart the IDE.
- 6. For more information, [read this extended manual](http://thijs.elenbaas.net/2012/07/installing-an-arduino-library/)
-- If you want to have a package that includes all referenced libraries, use the pre-packaged library
- 1. Download the package as a zipfile [here](https://github.com/thijse/Zipballs/blob/master/CmdMessenger/CmdMessenger.zip?raw=true) or as a tarball [here ](https://github.com/thijse/Zipballs/blob/master/CmdMessenger/CmdMessenger.tar.gz?raw=true).
- 2. Copy the folders inside the **libraries** folder  to you your **arduinosketchfolder/libraries/** folder.
- 3. Restart the IDE.
- 3. For more information, [read this extended manual](http://thijs.elenbaas.net/2012/07/installing-an-arduino-library/)
+This library can be downloaded directly from its GitHub repository: 
+ 1. Go to [https://github.com/id-studiolab/Arduino-CmdMessengerID](https://github.com/id-studiolab/Arduino-CmdMessengerID)
+ 2. [**Click here to download**](https://github.com/id-studiolab/Arduino-CmdMessengerID/archive/master.zip) or navigate to the green _**Code**_ button at the top of the repository and then click _**Download ZIP**_
+ 3. Uncompressed the folder _**Arduino-CmdMessengerID-master**_  and rename it to _**CmdMessengerID**_.
+ 4. Place the _**CmdMessengerID**_ folder in your _**libraries**_ folder, which is located in your Arduino IDE's _**sketchbook**_ folder. You can find or change its location at **File > Preferences > Sketchbook location**. If you never installed a library before, you may need to create the _**libraries**_ folder.
+ 5. Make sure your _**libraries**_ folder does not contain a previous version of _**CmdMessenger**_. If it does, back up or delete that folder before installing _**CmdMessengerID**_ in order to avoid any conflicts.
+ 5. Restart the Arduino IDE.
 
 ## Getting Started
 
