@@ -1,8 +1,8 @@
 {
-  "name": "CmdMessenger",
+  "name": "CmdMessengerID",
   "keywords": "protocol, message, communication, serial",
   "description": "A serial messaging library for the Arduino and .NET/Mono platform. ",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "authors":
   [
     {
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/thijse/Arduino-CmdMessenger.git"
   },
-  "dependencies": 
+  "dependencies":
   [
     {
       "name": "PID",
@@ -33,6 +33,3 @@
   "frameworks": "arduino",
   "platforms": "*"
 }
-
-
- 
